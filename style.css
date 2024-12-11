@@ -1,0 +1,200 @@
+/* ================Global Styles============== */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+body{
+    background: #FFFFFF;
+    position: relative;
+    max-width: 1358px; 
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 18px;
+}
+ul,ol{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+a{
+    color: #171C28;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+
+h6{
+    font-size: 16px;
+}
+h5{
+    font-size: 18px;
+}
+
+
+.container {
+    max-width: 958px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* ================Global Styles============== End*/
+
+
+/* ================Header Styles============== */
+
+header#Header{
+    padding: 16px 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 20;
+    background: #FFFFFF;
+}
+header#Header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header#Header .menu_list{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+header#Header .auth_menu{
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+header#Header .auth_menu .active{
+    background: #60BE83;
+    color: #fff;
+    padding: 9.5px 18px;
+    display: inline-block;
+    border-radius: 6px;
+    text-decoration: none;
+}
+
+/* ================Header Styles============== End*/
+
+/* ================Hero Section Styles============== */
+
+section.hero_section{
+    height: 705px;
+    background: url(./img/blue.png) center/cover no-repeat;
+    padding-top: 146px;
+}
+section.hero_section .container{
+    position: relative;
+    /* overflow: hidden; */
+}
+section.hero_section .circle_design{
+    position: absolute;
+    left: 0;
+    top: 255px;
+}
+section.hero_section .box_row{
+    display: flex;
+    justify-content: space-between;
+}
+
+section.hero_section .box_row .box_left{
+    max-width: 548px;
+}
+section.hero_section .box_row .box_left .new_span{
+    font-size: 12px;
+    display: inline-block;
+    background: #60BE8C;
+    color: #fff;
+    padding: 12px;
+    border-radius: 99px;
+}
+section.hero_section .box_row .box_left .box_header{
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+section.hero_section .box_row .box_left .box_header h6{
+    color: #374151;
+}
+section.hero_section .box_row .box_left .box_body{
+    padding-top: 50px;
+    padding-bottom: 40px;
+}
+section.hero_section .box_row .box_left .box_body h1{
+    font-size: 48px;
+    font-weight: bold;
+    color: #171C28;
+    line-height: 48px;
+    padding-bottom: 40px;
+}
+section.hero_section .box_row .box_left .box_body h5{
+    color: #374151;
+    line-height: 28px;
+    font-weight: normal;
+}
+
+section.hero_section .box_row .box_left .box_footer .app_wrapper{
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    padding-bottom: 40px;
+}
+section.hero_section .box_row .box_left .box_footer .app_wrapper a{
+    text-decoration: none;
+}
+section.hero_section .box_row .box_left .box_footer .user_counter{
+    display: flex;
+    align-items: center;
+    gap: 48px;
+}
+section.hero_section .box_row .box_left .box_footer .user_counter h6{
+    color: #9CA3AF;
+    font-weight: bold;
+}
+section.hero_section .box_row .box_left .box_footer .user_counter .counter{
+    position: relative;
+}
+section.hero_section .box_row .box_left .box_footer .user_counter .counter:not(:last-child)::after{
+    content: "";
+    position: absolute;
+    right: -24px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1px;
+    height: 32px;
+    background: #D1D5DB;
+
+}
+
+section.hero_section .box_row .box_left .box_footer .user_counter .counter_wrapper{
+    font-size: 26px;
+    font-weight: bold;
+    color: #374151;
+}
+section.hero_section .box_row .box_right{
+    position: relative;
+}
+section.hero_section .box_row .box_right .header_phone{
+    z-index: 2;
+    position: relative;
+
+}
+section.hero_section .box_row .box_right .header_screen{
+    position: absolute;
+    top: 147px;
+    right: 147px;
+    z-index: 3;
+}
+
+section.hero_section .box_row .box_right .rectangle_bg{
+    position: absolute;
+    top: -29px;
+    right: 248px;
+    z-index: 1;
+}
+/* ================Hero Section Styles============== End*/
+
